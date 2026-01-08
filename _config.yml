@@ -1,0 +1,45 @@
+# Site settings
+title: BetterMoney
+description: Blindagem Patrimonial para o Seculo XXI - Protecao patrimonial com Bitcoin para empresas e individuos de alta renda.
+baseurl: "" # Change to "/repo-name" if deploying to github.io/repo-name
+url: "" # Change to "https://username.github.io" when deploying
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - content-data.md
+  - README.md
+  - LICENSE
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# SEO & Social
+author: BetterMoney
+lang: pt-BR
+twitter:
+  card: summary_large_image
+social:
+  name: BetterMoney
+  links:
+    - https://youtube.com/@bettermoney
+
+# Permalink structure
+permalink: pretty
+
+# Sass settings
+sass:
+  style: compressed
